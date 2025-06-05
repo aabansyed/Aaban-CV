@@ -1,21 +1,27 @@
-<!doctype html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/988097.png" type="image/x-icon">
+    <title>Talha Anjum - Front-end Developer</title>
+</head>
+<body style="background-color: darkgrey;">
+    
 
 <head>
-    <title>Title</title>
     <style>
         :root {
             --bg-primary: #7e7373;
               --bg-img: url('sanam.jpg'); /* Light theme image */
             --bg-thirdary: #ffffff;
-            --bg-tertiary: #e1d9d9;
+            --bg-tertiary: #fff;
             --bg-white: #fff;
             --border-color: #827878;
             --text-primary: #000000;
             --text-secondary: #ffffff;
             --shadow-color: #7e7373;
             --shadow-black: #000000;
-            --sidebar-bg: #e1d9d9;
+            --sidebar-bg: #fff;
             --highlight-bg: #ffd700;
             --highlight-text: #333;
             --available-text: #008000;
@@ -38,16 +44,13 @@
             --available-text: #00ff00;
         }
          
-        body {
-            background-color: var(--bg-primary);
-            margin: 0px;
-            padding: 0px;
-            height: auto;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-            font-family: 'Roboto', sans-serif;
-        }
-
+     body {
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s ease;
+      background-color: pink; /* Light blue - default (light mode) */
+      color: #000;
+    }
 
         .container {
             
@@ -86,7 +89,7 @@
 
       .center-top {
   height: 35%;
-  background-image: var(--bg-img);  /* Dynamic image from variable */
+  background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -157,7 +160,7 @@
             .contact-icons {
             
             position: relative;
-            top: 40%;
+            top: 20%;
             display: flex;
             flex-direction: column;
             gap: 50px;
@@ -569,7 +572,7 @@
                 <!-- center-top -->
                 <div class="center-top">
                     <div class="m-3">
-                        <h1> <b>I'm Talha Anjum Front-End Developer</b> </h1>
+                        <h1> <b>I'm Talha Anjum <span style="color: gold; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><br>Front-End</span> Developer</b> </h1>
                         <p>I’m Talha Anjum, a passionate front-end developer skilled in HTML, CSS, and JavaScript. I build fast, responsive websites tailored to your needs, whether for e-commerce or informational purposes. I deliver clean, user-friendly designs efficiently and enjoy turning ideas into reality. Currently, I’m honing my skills through studies at Aptech and have completed freelance projects that showcase my commitment and creativity.</p>
                      <a href="https://aaban-portfolio.vercel.app/">
                          <button type="button" class="btn btn-warning" style="height: 50px; width: 150px;">
@@ -582,8 +585,9 @@
                         <img src="https://wallpaperaccess.com/full/9311030.jpg" alt="" height="200px" style="border-radius: 100px;">
                     </div>
                 </div>
+                <br><br><br><br>
                 <!-- center-center -->
-                <div class="center-center">
+                <div class="center-center" style="background-color: transparent;">
                     <h2>My Services</h2>
                     <p>I specialize in SEO, web development, and web design, with a strong interest in the stock
                          market. I build and design professional websites optimized for visibility, featuring cle
@@ -591,6 +595,7 @@
                     </p>
 
                     </div>
+                    <br>
                 <!-- center-bottom -->
                 <div class=" containerr center-bottom">
                     <div class="row  g-1 ">
@@ -631,9 +636,11 @@
 
                         </div>
                         <br>
-                        <div class="center-center  ">
+                        <div class="center-center  " style="background-color: transparent;">
                     <h2 style="font-family: Arial Rounded MT Bold; font-weight: bold; "  >Price plans</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque odio corporis ab. Cumque quis</p>  <p>nostrum perferendis optio inventore laboriosam? Ea, reprehenderit commodi!</p>
+                    <p>Flexible Pricing for Every Need Pick Your Plan, Power Your Journey Clear, simple pricing. No hidden fees. Just what you need.
+
+</p>
                 </div>
                     </div>
             </div>
