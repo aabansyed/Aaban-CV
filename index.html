@@ -5,14 +5,58 @@
     <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/988097.png" type="image/x-icon">
     <title>Talha Anjum - Front-end Developer</title>
 </head>
-<body style="background-color: darkgrey;">
     
 
 <head>
-    <style>
-        :root {
-            --bg-primary: #7e7373;
-              --bg-img: url('sanam.jpg'); /* Light theme image */
+  <style>
+  body {
+      font-family: 'Georgia', serif;
+      padding: 20px;
+    }
+
+    .header {
+      font-size: 48px;
+      border-bottom: 3px solid #000;
+    }
+
+    .desktop-layout {
+      display: block;
+    }
+
+    .mobile-layout {
+      display: none;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 767px) {
+      body {
+        background-color: #222;
+        color: #fff;
+        font-family: 'Courier New', monospace;
+        padding: 10px;
+      }
+
+      .header {
+        font-size: 32px;
+        border-bottom: 2px dashed #fff;
+      }
+
+      .desktop-layout {
+        display: none;
+      }
+
+      .mobile-layout {
+        display: block;
+      }
+    }
+  </style>
+  <!-- Desktop version -->
+  <div class="desktop-layout">
+    <!-- All your laptop/desktop code here -->
+      <style>
+      :root {
+        --bg-primary: #7e7373;
+        --bg-img: url('sanam.jpg'); /* Light theme image */
             --bg-thirdary: #ffffff;
             --bg-tertiary: #fff;
             --bg-white: #fff;
@@ -25,12 +69,12 @@
             --highlight-bg: #ffd700;
             --highlight-text: #333;
             --available-text: #008000;
-        }
+          }
 
         [data-theme="dark"] {
             --bg-primary: #2c2c2c;
  --bg-img: url('meri.jpg'); /* Dark theme image */
-            --bg-thirdary: #787676;
+ --bg-thirdary: #787676;
             --bg-tertiary: #4a4a4a;
             --bg-white: #333;
             --border-color: #555;
@@ -42,17 +86,15 @@
             --highlight-bg: #4a4a4a;
             --highlight-text: #ffd700;
             --available-text: #00ff00;
-        }
-         
-     body {
+          }
+          
+          body {
       margin: 0;
       padding: 20px;
       transition: background-color 0.3s ease;
-      background-color: pink; /* Light blue - default (light mode) */
-      color: #000;
     }
 
-        .container {
+    .container {
             
             width: 100vw;
             margin: 5% auto;
@@ -60,9 +102,9 @@
             height: auto;
 
 
-        }
+          }
 
-        .main-left {
+          .main-left {
             
             height: auto;
             border-top-left-radius: 20px;
@@ -70,25 +112,25 @@
             color: var(--text-primary);
             background-color: var(--sidebar-bg);
             transition: color 0.3s ease;
-        }
+          }
 
         .main-center {
             
             height: auto;
             color: var(--text-primary);
             transition: color 0.3s ease;
-        }
-
+          }
+          
         .main-right {
             background-color: var(--bg-tertiary);
             height: auto;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-             transition: background-color 0.3s ease;
-        }
-
+            transition: background-color 0.3s ease;
+          }
+          
       .center-top {
-  height: 35%;
+        height: 35%;
   background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
@@ -113,7 +155,7 @@
             transition: all 0.3s ease;
             margin-top: 5px;
             color: var(--text-secondary);
-        }
+          }
         .center-center h2, .center-center p {
             color: var(--text-primary);
             transition: color 0.3s ease;
@@ -121,18 +163,18 @@
 
         .center-bottom {
            
-            height: 90vh;
-            text-align: center;
-            overflow: hidden;
-            
+          height: 90vh;
+          text-align: center;
+          overflow: hidden;
+          
         }
-
+        
         .service-icon {
   color: #FFD700 !important; /* Gold */
 }
 
-        .test {
-           
+.test {
+  
             background-color: var(--bg-white);
             position: relative;
             box-shadow: 0 0 10px var(--shadow-black);
@@ -143,30 +185,30 @@
             height: 100%;
             transition: all 0.3s ease;
             color: var(--text-primary);
-        }
-        .test h3, .test p {
+          }
+          .test h3, .test p {
             color: var(--text-primary);
             transition: color 0.3s ease;
         }
         
         .contact-icons {
                 
-               
-                justify-content: center;
+          
+          justify-content: center;
                 margin: 20px 10px;
-              
                 
-            }
-            .contact-icons {
-            
-            position: relative;
-            top: 20%;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            
-        }
-        .contact-icon {
+                
+              }
+              .contact-icons {
+                
+                position: relative;
+                top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                
+              }
+              .contact-icon {
             width: 50px;
             height: 50px;
             background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);
@@ -179,13 +221,12 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(255, 154, 86, 0.3);
             transition: all 0.3s ease;   
-        }
+          }
         .contact-icon:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 20px rgba(255, 154, 86, 0.4);
         }
-               /* Dark/Light Mode Toggle Styles */
-        .toggle {
+               .toggle {
             position: relative;
             top: 20px;
             display: flex;
@@ -204,14 +245,14 @@
             border: none;
             outline: none;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
-        }
-
+          }
+          
         [data-theme="dark"] .theme-toggle {
             background: linear-gradient(135deg, #4a4a4a, #2c2c2c);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .theme-toggle::before {
+          }
+          
+          .theme-toggle::before {
             content: '';
             position: absolute;
             top: 3px;
@@ -227,60 +268,60 @@
         [data-theme="dark"] .theme-toggle::before {
             transform: translateX(30px);
             background: #f0f0f0;
-        }
-
-        .theme-icon {
+          }
+          
+          .theme-icon {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             font-size: 14px;
             transition: all 0.4s ease;
             z-index: 1;
-        }
+          }
 
         .sun-icon {
             left: 8px;
             color: #ff8c00;
             opacity: 1;
-        }
-
-        .moon-icon {
+          }
+          
+          .moon-icon {
             right: 8px;
             color: #c0c0c0;
             opacity: 0;
-        }
-
-        [data-theme="dark"] .sun-icon {
+          }
+          
+          [data-theme="dark"] .sun-icon {
             opacity: 0;
-        }
-
-        [data-theme="dark"] .moon-icon {
+          }
+          
+          [data-theme="dark"] .moon-icon {
             opacity: 1;
         }
 
         .theme-toggle:hover {
-            transform: scale(1.05);
+          transform: scale(1.05);
         }
-
+        
         .theme-toggle:active {
-            transform: scale(0.95);
+          transform: scale(0.95);
         }
                 
         .service-icon {
-            color: #ff6b6b;
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
+          color: #ff6b6b;
+          transition: all 0.3s ease;
+          margin-bottom: 20px;
         }
 
         [data-theme="dark"] .service-icon {
-            color: #ff9a56;
+          color: #ff9a56;
         }
         
-
+        
         /* left side style */
         
          .containerrr {
-      display: flex;
+           display: flex;
       flex-direction: row;
     }
     .sidebar {
@@ -299,8 +340,8 @@
       color: var(--text-primary);
     }
     .profile-info p {
-            color: var(--text-primary);
-        }
+      color: var(--text-primary);
+    }
     .profile-pic {
       position: relative;
       display: inline-block;
@@ -330,7 +371,7 @@
             padding: 2px 4px;
             border-radius: 3px;
             transition: all 0.3s ease;
-        }
+          }
         .info-box .available {
             color: var(--available-text) !important;
             background: none !important;
@@ -346,7 +387,7 @@
       margin-top: 10px;
     }
     .contact-icon {
-  text-decoration: none;
+      text-decoration: none;
 }
 .contact-icon {
   width: 50px;
@@ -354,15 +395,15 @@
   background: linear-gradient(135deg, #FFD700
  0%, #FFD700
  100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 154, 86, 0.3);
-  text-decoration: none; /* ✅ added this line */
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ font-size: 20px;
+ transition: all 0.3s ease;
+ box-shadow: 0 4px 15px rgba(255, 154, 86, 0.3);
+ text-decoration: none; 
 }
 
     .social-icons a {
@@ -474,9 +515,9 @@
       text-align: center;
     }
     h1, h2, h3, h4, h5, h6, p, span, div {
-            color: var(--text-primary);
-            transition: color 0.3s ease;
-        }
+      color: var(--text-primary);
+      transition: color 0.3s ease;
+    }
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
@@ -495,25 +536,28 @@
     }
        
     </style>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+  </head>
+  
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+ 
 
-</head>
-
-<body>
-
-    <div class="container">
-        <div class="row ">
+<div class="container">
+  <div class="row ">
             <!-- left -->
             <div class="col-3  main-left ">
-                <div class="profile-info">
-        <div class="profile-pic">
+              <div class="profile-info">
+                <div class="profile-pic">
           <img src="aaaja.jpg" alt="Profile">
           <span class="online-dot"></span>
         </div>
@@ -564,50 +608,51 @@
         <li><i class="fa-solid fa-check-circle"></i> GIT Knowledge</li>
       </ul>
       <a href="assets/cv.pdf" class="btn-d" download="Talha_Anjum_CV.pdf">Download CV <i class="fa-solid fa-download"></i></a>
- <br><br><br>     
-            </div>
- 
-            <!-- center -->
-            <div class="col-8  main-center ">
-                <!-- center-top -->
+      <br><br><br>     
+    </div>
+    
+     <!-- Center Content -->
+            <div class="col-lg-8 col-md-12 main-center">
+                <!-- Hero Section -->
                 <div class="center-top">
-                    <div class="m-3">
-                        <h1> <b>I'm Talha Anjum <span style="color: gold; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><br>Front-End</span> Developer</b> </h1>
-                        <p>I’m Talha Anjum, a passionate front-end developer skilled in HTML, CSS, and JavaScript. I build fast, responsive websites tailored to your needs, whether for e-commerce or informational purposes. I deliver clean, user-friendly designs efficiently and enjoy turning ideas into reality. Currently, I’m honing my skills through studies at Aptech and have completed freelance projects that showcase my commitment and creativity.</p>
-                     <a href="https://aaban-portfolio.vercel.app/">
-                         <button type="button" class="btn btn-warning" style="height: 50px; width: 150px;">
-                             HIRE ME <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                    <div class="hero-content">
+                        <h1>I'm Talha Anjum<br><span>Front-End</span> Developer</h1>
+                        <p>I'm Talha Anjum, a passionate front-end developer skilled in HTML, CSS, and JavaScript. I build fast, responsive websites tailored to your needs, whether for e-commerce or informational purposes. I deliver clean, user-friendly designs efficiently and enjoy turning ideas into reality.</p>
+                        <a href="https://aaban-portfolio.vercel.app/">
+                            <button type="button" class="hire-btn">
+                                HIRE ME <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
                             </button>
                         </a>
-
                     </div>
-                    <div class="m-3">
-                        <img src="https://wallpaperaccess.com/full/9311030.jpg" alt="" height="200px" style="border-radius: 100px;">
+                    <div class="hero-image">
+                        <img src="kia geet.webp" alt="Hero Image">
                     </div>
                 </div>
+
+
+
                 <br><br><br><br>
                 <!-- center-center -->
                 <div class="center-center" style="background-color: transparent;">
                     <h2>My Services</h2>
                     <p>I specialize in SEO, web development, and web design, with a strong interest in the stock
-                         market. I build and design professional websites optimized for visibility, featuring cle
-                         an and user-friendly UI/UX. My understanding of financial trends helps me think strategically, blending technology and business insights to deliver effective solutions.
-                    </p>
-
-                    </div>
-                    <br>
-                <!-- center-bottom -->
-                <div class=" containerr center-bottom">
-                    <div class="row  g-1 ">
-                        <div class=" test  col-4">
+                         market. I build and design professional websites optimized for visibility, featuring clean and user-friendly UI/UX. My understanding of financial trends helps me think strategically, blending technology and business insights to deliver effective solutions.
+                        </p>
+                        
+                      </div>
+                      <br>
+                      <!-- center-bottom -->
+                      <div class=" containerr center-bottom">
+                        <div class="row  g-1 ">
+                          <div class=" test  col-4">
                             <i class="fas fa-palette service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
                             <h3>Web Design</h3>
                             <p> Crafting beautiful and user-friendly website layouts.</p>
-                        </div>
-                        <div class=" test  col-4">
+                          </div>
+                          <div class=" test  col-4">
                             <i class="fas fa-code service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
-                          <h3>Web Development  
-                        </h3>
+                            <h3>Web Development  
+                            </h3>
                             <p>Building responsive and powerful web applications.</p>
 
                         </div>
@@ -619,17 +664,17 @@
                     </div>
                     <div class="row  g-1 ">
                         <div class=" test col-4">
-                            <i class="fas fa-mobile-alt service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
-                            <h3>Mobile App</h3>
-                            <p> Designing cross-platform mobile experiences.</p>
+                          <i class="fas fa-mobile-alt service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                          <h3>Mobile App</h3>
+                          <p> Designing cross-platform mobile experiences.</p>
                         </div>
                         <div class=" test  col-4">
-                            <i class="fas fa-chart-line service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
-                            <h3>Analytics</h3>
+                          <i class="fas fa-chart-line service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                          <h3>Analytics</h3>
                             <p>Tracking and analyzing website performance.</p>
                         </div>
                         <div class=" test  col-4">
-                            <i class="fas fa-shield-alt service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                          <i class="fas fa-shield-alt service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
                             <h3>Security</h3>
                             <p>Implementing robust protection against threats.</p>
                         </div>
@@ -637,20 +682,100 @@
                         </div>
                         <br>
                         <div class="center-center  " style="background-color: transparent;">
-                    <h2 style="font-family: Arial Rounded MT Bold; font-weight: bold; "  >Price plans</h2>
+                          <h2 style="font-family: Arial Rounded MT Bold; font-weight: bold; "  >Price plans</h2>
                     <p>Flexible Pricing for Every Need Pick Your Plan, Power Your Journey Clear, simple pricing. No hidden fees. Just what you need.
 
-</p>
-                </div>
+                    </p>
+                  <!-- ✅ Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #333; /* Default light mode */
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Dark mode */
+    body.dark-mode {
+      background-color: lemonchiffon;
+    }
+
+    .toggle-btn {
+      top: 20px;
+      right: 15px;
+      height: 100px;
+      width: 100px;
+      padding: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: seashell;
+      color: black;
+      border-radius: 50%;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s, transform 0.15s;
+    }
+
+    .toggle-btn:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Click animation */
+    @keyframes clickEffect {
+      0% { transform: scale(1); }
+      50% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    .toggle-btn.clicked {
+      animation: clickEffect 150ms ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- ✅ Toggle Button with Icon -->
+  <button class="toggle-btn" onclick="toggleMode()" id="themeToggle">
+    <i class="fas fa-sun"></i>
+  </button>
+
+  <!-- ✅ JavaScript for Theme + Animation -->
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.getElementById("themeToggle");
+      const icon = btn.querySelector("i");
+
+      // Toggle dark mode class only
+      body.classList.toggle('dark-mode');
+
+      // Toggle icon
+      icon.classList.toggle("fa-sun");
+      icon.classList.toggle("fa-moon");
+
+      // Animate click
+      btn.classList.add("clicked");
+      setTimeout(() => {
+        btn.classList.remove("clicked");
+      }, 150);
+    }
+  </script>
+                  </div>
                     </div>
             </div>
                 <!-- right -->
             <div class="col-1  main-right ">
                     <div class="toggle">
-                         <button class="theme-toggle" onclick="toggleTheme()">
+                      <button class="theme-toggle" onclick="toggleTheme()">
                         <i class="fas fa-sun theme-icon sun-icon"></i>
                         <i class="fas fa-moon theme-icon moon-icon"></i>
-                    </button>
+                      </button>
                         
                     </div>
                     <div class="contact-icons">
@@ -663,35 +788,29 @@
             </div>
                 
         </div>
-    </div>
-    
-    <script>
-        // Theme toggle functionality
+      </div>
+      <script>
         function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
+          const currentTheme = document.documentElement.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
             document.documentElement.setAttribute('data-theme', newTheme);
             
-            // Store theme preference in memory (localStorage alternative for Claude.ai)
             window.themePreference = newTheme;
         }
 
-        // Apply saved theme on page load
         function applyTheme() {
-            const savedTheme = window.themePreference || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
+          const savedTheme = window.themePreference || 'light';
+          document.documentElement.setAttribute('data-theme', savedTheme);
         }
-
-        // Initialize theme on page load
+        
         document.addEventListener('DOMContentLoaded', function() {
-            applyTheme();
+          applyTheme();
         });
-
-        // Apply theme immediately (in case DOMContentLoaded has already fired)
+        
         applyTheme();
-
-    </script>
+        
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -700,6 +819,979 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+  </div>
+   
+ <!-- Mobile SIRI -->
+  <div class="mobile-layout">
+    <!--  mobile code  -->
+     <html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/988097.png" type="image/x-icon">
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-primary: #7e7373;
+            --bg-img: url('sanam.jpg');
+            --bg-thirdary: #ffffff;
+            --bg-tertiary: #fff;
+            --bg-white: #fff;
+            --border-color: #827878;
+            --text-primary: #000000;
+            --text-secondary: #ffffff;
+            --shadow-color: #7e7373;
+            --shadow-black: #000000;
+            --sidebar-bg: #fff;
+            --highlight-bg: #ffd700;
+            --highlight-text: #333;
+            --available-text: #008000;
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #2c2c2c;
+            --bg-img: url('meri.jpg');
+            --bg-thirdary: #787676;
+            --bg-tertiary: #4a4a4a;
+            --bg-white: #333;
+            --border-color: #555;
+            --text-primary: #fff;
+            --text-secondary: #ffffff;
+            --shadow-color: #1a1a1a;
+            --shadow-black: #000000;
+            --sidebar-bg: #2c2c2c;
+            --highlight-bg: #4a4a4a;
+            --highlight-text: #ffd700;
+            --available-text: #00ff00;
+        }
+         
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+             background-color: #87CEFA;
+            color: #000;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        [data-theme="dark"] body {
+            background-color: #1a1a1a;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 2% auto;
+            border-radius: 20px;
+            height: auto;
+            padding: 0;
+        }
+
+        .main-left {
+            height: auto;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            color: var(--text-primary);
+            background-color: var(--sidebar-bg);
+            transition: all 0.3s ease;
+            padding: 20px;
+            position: relative;
+        }
+
+        .main-center {
+            height: auto;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+            padding: 20px;
+        }
+
+        .main-right {
+            background-color: var(--bg-tertiary);
+            height: auto;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: background-color 0.3s ease;
+            padding: 20px;
+            position: relative;
+        }
+
+        .center-top {
+            height: auto;
+            min-height: 300px;
+            background-image: var(--bg-img);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+            box-shadow: 0 0 10px 2px var(--shadow-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            border-radius: 15px;
+            color: var(--text-primary);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .center-center {
+            height: auto;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: var(--bg-thirdary);
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            color: var(--text-secondary);
+            border-radius: 10px;
+        }
+
+        .center-center h2, .center-center p {
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .center-bottom {
+            height: auto;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .service-icon {
+            color: #FFD700 !important;
+        }
+
+        .test {
+            background-color: var(--bg-white);
+            position: relative;
+            box-shadow: 0 0 10px var(--shadow-black);
+            border: #edd5d5 solid 1px;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px 0;
+            height: auto;
+            min-height: 200px;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .test:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .test h3, .test p {
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .contact-icons {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #FFD700 0%, #FFD700 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 154, 86, 0.3);
+            text-decoration: none;
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 154, 86, 0.4);
+            color: white;
+        }
+
+        /* Theme Toggle */
+        .toggle {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: none;
+            outline: none;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        [data-theme="dark"] .theme-toggle {
+            background: linear-gradient(135deg, #4a4a4a, #2c2c2c);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-toggle::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        [data-theme="dark"] .theme-toggle::before {
+            transform: translateX(30px);
+            background: #f0f0f0;
+        }
+
+        .theme-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+
+        .sun-icon {
+            left: 8px;
+            color: #ff8c00;
+            opacity: 1;
+        }
+
+        .moon-icon {
+            right: 8px;
+            color: #c0c0c0;
+            opacity: 0;
+        }
+
+        [data-theme="dark"] .sun-icon {
+            opacity: 0;
+        }
+
+        [data-theme="dark"] .moon-icon {
+            opacity: 1;
+        }
+
+        /* Left Sidebar Styles */
+        .profile-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--highlight-bg);
+        }
+
+        .online-dot {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: limegreen;
+            border: 3px solid var(--sidebar-bg);
+            border-radius: 50%;
+            transition: border-color 0.3s ease;
+        }
+
+        .info-box {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .info-box strong {
+            background-color: var(--highlight-bg) !important;
+            color: var(--highlight-text) !important;
+            padding: 4px 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .info-box .available {
+            color: var(--available-text) !important;
+            background: none !important;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+        }
+
+        .social-icons i {
+            background-color: var(--highlight-bg);
+            color: var(--highlight-text);
+            padding: 12px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons i:hover {
+            background-color: #ff8c00;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Skills and Progress Bars */
+        .language-skill p, .skill-set p {
+            font-family: 'Arial', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-primary);
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .bar-wrapper {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .progress-bar {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            overflow: hidden;
+            height: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .progress-bar div {
+            height: 100%;
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            border-radius: 10px;
+            transition: width 0.8s ease;
+        }
+
+        .percent {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        .btn-d {
+            font-family: 'Arial', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .btn-d:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.4);
+            color: white;
+        }
+
+        .extra-skills {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .extra-skills li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+            padding: 8px 0;
+        }
+
+        .extra-skills i {
+            color: #ffd700;
+            min-width: 20px;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-content h1 span {
+            color: #ffd700;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+
+        .hero-image {
+            flex: 0 0 200px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .hire-btn {
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .hire-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.4);
+            color: white;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, span, div {
+            color: var(--text-primary);
+            transition: color 0.3s ease;
+        }
+
+        /* Responsive  */
+        @media (max-width: 1200px) {
+            .container {
+                margin: 1% auto;
+                padding: 0 10px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .main-left {
+                border-radius: 20px 20px 0 0;
+                margin-bottom: 20px;
+            }
+            
+            .main-right {
+                border-radius: 0 0 20px 20px;
+                margin-top: 20px;
+                min-height: 200px;
+            }
+            
+            .contact-icons {
+                position: static;
+                transform: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 20px;
+            }
+            
+            .toggle {
+                position: static;
+                transform: none;
+                margin-bottom: 20px;
+            }
+            
+            .center-top {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            
+            .hero-content {
+                order: 2;
+                margin-top: 20px;
+            }
+            
+            .hero-image {
+                order: 1;
+                flex: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 5px;
+            }
+            
+            .container {
+                margin: 0;
+                border-radius: 15px;
+            }
+            
+            .main-left, .main-center, .main-right {
+                padding: 15px;
+                border-radius: 15px;
+                margin: 10px 0;
+            }
+            
+            .center-top {
+                padding: 20px 15px;
+                min-height: 250px;
+            }
+            
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .hero-image img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .profile-pic img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .test {
+                margin: 10px 0;
+                padding: 20px;
+                min-height: 180px;
+            }
+            
+            .contact-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+            
+            .social-icons {
+                gap: 10px;
+            }
+            
+            .social-icons i {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 0.9rem;
+            }
+            
+            .hero-image img {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .test {
+                padding: 15px;
+                min-height: 160px;
+            }
+            
+            .service-icon {
+                font-size: 40px !important;
+            }
+            
+            .info-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .contact-icons {
+                gap: 10px;
+            }
+            
+            .contact-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .hero-content h1 {
+                font-size: 1.3rem;
+            }
+            
+            .center-top {
+                padding: 15px 10px;
+            }
+            
+            .test {
+                padding: 12px;
+                min-height: 140px;
+            }
+            
+            .service-icon {
+                font-size: 35px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row g-0">
+            <!-- Left Sidebar -->
+            <div class="col-lg-3 col-md-12 main-left">
+                <div class="profile-info">
+                    <div class="profile-pic">
+                        <img src="aaaja.jpg" alt="Profile">
+                        <span class="online-dot"></span>
+                    </div>
+                    <h2>Talha Anjum</h2>
+                    <p>Front-End Developer</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/talhaanjummusic"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/talhahanjum/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://en.wikipedia.org/wiki/Talha_Anjum"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/talha-anjum-9a4652175"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCaHBioELm9IzGYhg70Z1BKg"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="info-box">
+                    <strong>Age:</strong>
+                    <span>27</span>
+                </div>
+                <div class="info-box">
+                    <strong>Skills:</strong>
+                    <span>Singer</span>
+                </div>
+                <div class="info-box">
+                    <strong>Web Developer:</strong>
+                    <span class="available">Available</span>
+                </div>
+                <div class="info-box">
+                    <strong>Address:</strong>
+                    <span>Karachi, Pakistan</span>
+                </div>
+                
+                <hr>
+                
+                <h4>Languages</h4>
+                <div class="language-skill">
+                    <p>Urdu</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 100%"></div></div>
+                        <span class="percent">100%</span>
+                    </div>
+                    <p>English</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 70%"></div></div>
+                        <span class="percent">70%</span>
+                    </div>
+                    <p>Punjabi</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 30%"></div></div>
+                        <span class="percent">30%</span>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <h4>Skills</h4>
+                <div class="skill-set">
+                    <p>HTML</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 90%"></div></div>
+                        <span class="percent">90%</span>
+                    </div>
+                    <p>CSS</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 85%"></div></div>
+                        <span class="percent">85%</span>
+                    </div>
+                    <p>JavaScript</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 80%"></div></div>
+                        <span class="percent">80%</span>
+                    </div>
+                    <p>PHP</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 75%"></div></div>
+                        <span class="percent">75%</span>
+                    </div>
+                    <p>WordPress</p>
+                    <div class="bar-wrapper">
+                        <div class="progress-bar"><div style="width: 85%"></div></div>
+                        <span class="percent">85%</span>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <h4>Extra Skills</h4>
+                <ul class="extra-skills">
+                    <li><i class="fa-solid fa-check-circle"></i> Bootstrap, Materialize</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Stylus, Sass, Less</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Gulp, Webpack, Grunt</li>
+                    <li><i class="fa-solid fa-check-circle"></i> GIT Knowledge</li>
+                </ul>
+                
+                <div class="text-center">
+                    <a href="#" class="btn-d">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+
+            <!-- Center Content -->
+            <div class="col-lg-8 col-md-12 main-center">
+                <!-- Hero Section -->
+                <div class="center-top">
+                    <div class="hero-content">
+                        <h1>I'm Talha Anjum<br><span>Front-End</span> Developer</h1>
+                        <p>I'm Talha Anjum, a passionate front-end developer skilled in HTML, CSS, and JavaScript. I build fast, responsive websites tailored to your needs, whether for e-commerce or informational purposes. I deliver clean, user-friendly designs efficiently and enjoy turning ideas into reality.</p>
+                        <a href="https://aaban-portfolio.vercel.app/">
+                            <button type="button" class="hire-btn">
+                                HIRE ME <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="kia geet.webp" alt="Hero Image">
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <div class="center-center">
+                    <h2>My Services</h2>
+                    <p>I specialize in SEO, web development, and web design, with a strong interest in the stock market. I build and design professional websites optimized for visibility, featuring clean and user-friendly UI/UX.</p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="center-bottom">
+                    <div class="row g-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="test">
+                                <i class="fas fa-palette service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                                <h3>Web Design</h3>
+                                <p>Crafting beautiful and user-friendly website layouts.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="test">
+                                <i class="fas fa-code service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                                <h3>Web Developer</h3>
+                                <p>Building responsive and powerful web applications.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="test">
+                                <i class="fas fa-search service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                                <h3>SEO</h3>
+                                <p>Optimizing websites to rank higher on search engines.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="test">
+                                <i class="fas fa-mobile-alt service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                                <h3>Mobile App</h3>
+                                <p>Designing cross-platform mobile experiences.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="test">
+                                <i class="fas fa-chart-line service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                                <h3>Analytics</h3>
+                                <p>Tracking and analyzing website performance.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="test">
+                                <i class="fas fa-shield-alt service-icon" style="font-size: 60px; margin-bottom: 20px;"></i>
+                                <h3>Security</h3>
+                                <p>Implementing robust protection against threats.</p>
+                            </div>
+                        </div>
+                    </div>
+
+  </div>
+  </div>
+                        <br>
+               <!-- MOBILE-ONLY SECTION START -->
+               <div class="center-center" style="background-color: transparent;">
+                 <h2 style="font-family: Arial Rounded MT Bold; font-weight: bold;">Price Plans</h2>
+                 <p>
+                   Flexible Pricing for Every Need Pick Your Plan, Power Your Journey.
+                   Clear, simple pricing. No hidden fees. Just what you need.
+                  </p>
+                </div>
+                <div class="mobile-only">
+
+  <!-- Right Sidebar -->
+ <!-- MOBILE-ONLY SECTION -->
+<div class="mobile-only social-mobile">
+  <button class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-sun theme-icon sun-icon"></i>
+    <i class="fas fa-moon theme-icon moon-icon"></i>
+  </button>
+
+  <div class="contact-icons">
+    <a href="https://aaban-portfolio.vercel.app/" class="contact-icon"><i class="fab fa-chrome"></i></a>
+    <a href="https://www.facebook.com/zeshanzahid667" class="contact-icon"><i class="fab fa-facebook"></i></a>
+    <a href="https://github.com/aabansyed" class="contact-icon"><i class="fab fa-github"></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" class="contact-icon"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.instagram.com/_.aabanyyy._/" class="contact-icon"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+
+<style>
+  /* Hide mobile layout by default */
+.mobile-only {
+  display: none;
+}
+
+/* Mobile layout styles */
+@media (max-width: 767px) {
+  .mobile-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .contact-icon {
+    font-size: 24px;
+    color: gold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  .theme-toggle {
+    background-color: gold;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+}
+.contact-icon i {
+  color: black;
+  font-size: 20px;
+}
+
+</style>
 </body>
 
 </html>
